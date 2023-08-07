@@ -1,2 +1,2 @@
-# To-Do-List-ReactJS
+# Aurora Agenda
 https://divyaa003.github.io/Todo-List-App/
