@@ -1,0 +1,133 @@
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 30px;
+  /* padding-right: 80px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(221, 127, 188, 0.4);
+  animation: glow 5s infinite;
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(239, 223, 234, 0.7); }
+  50% { box-shadow: 0 0 20px rgb(238, 207, 231); }
+}
+
+
+.content-container {
+  /* background-color: #f3afdf; */
+  border-radius: 20px;
+  padding: 50px;
+  width: 600px;
+  /* padding-right: 80px;
+  padding-left: 60px; */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type='text'] {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type='text']::placeholder {
+  color: #433c3c;
+}
+
+.add-button {
+  background-color: #204429;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #474242;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #ff0000;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-button svg {
+  font-size: 16px;
+}
+
+.delete-button:hover {
+  color: #990000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5em 0;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-container {
+  position: relative;
+  margin-right: 10px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: none;
+}
+
+input[type='checkbox']:checked + .checkmark {
+  display: block;
+}
+
+.checked {
+  background-color: #e0e0e0;
+}
+
+.checked label {
+  text-decoration: line-through;
+  color: #555;
+}

@@ -1,0 +1,45 @@
+/* Reset default margin and padding for all elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color for the entire page */
+  body {
+    background-image: url("https://i.pinimg.com/564x/48/6e/a0/486ea052aa08114de8f3fe6fa825b708.jpg");
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  }
+  
+  /* Apply styles to the root element */
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  /* Apply styles to the header element */
+  header {
+    text-align: center;
+  }
+  
+  /* Apply styles to the main element */
+  main {
+    width: 100%;
+    max-width: 600px;
+    padding: 1em;
+  }
+  
+  /* Apply styles to the footer element */
+  footer {
+    width: 100%;
+    background-color: mediumblue;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+  }
+  
